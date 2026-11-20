@@ -63,7 +63,6 @@ class ImageRecorder:
         )
         # setattr(self, f'{cam_name}_secs', data.images[0].header.stamp.secs)
         # setattr(self, f'{cam_name}_nsecs', data.images[0].header.stamp.nsecs)
-        # cv2.imwrite('/home/lucyshi/Desktop/sample.jpg', cv_image)
         if self.is_debug:
             getattr(self, f"{cam_name}_timestamps").append(
                 data.images[0].header.stamp.secs + data.images[0].header.stamp.nsecs * 1e-9
